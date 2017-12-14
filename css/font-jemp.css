@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'FuturaStd';
+	src: url('../fonts/FuturaStd-Medium.eot');
+	src: url('../fonts/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/FuturaStd-Medium.woff') format('woff'),
+		 url('../fonts/FuturaStd-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaStd';
+	src: url('../fonts/FuturaStd-Heavy.eot');
+	src: url('../fonts/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/FuturaStd-Heavy.woff') format('woff'),
+		 url('../fonts/FuturaStd-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaStd';
+	src: url('../fonts/FuturaStd-Bold.eot');
+	src: url('../fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/FuturaStd-Bold.woff') format('woff'),
+		 url('../fonts/FuturaStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ATOurBodoni';
+	src: url('../fonts/ATOurBodoni-Light.eot');
+	src: url('../fonts/ATOurBodoni-Light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ATOurBodoni-Light.woff') format('woff'),
+		 url('../fonts/ATOurBodoni-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
