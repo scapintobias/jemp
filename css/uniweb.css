@@ -17,6 +17,9 @@ body {          margin: 0; overflow-x: hidden }
 /* suggested line heights: 1.1494vw, 2.2989vw, 3.4483vw */
 @media screen and (min-width: 1600px) {
     #main {         padding: 1.1494vw 0 0 2.2989vw; width: 99.95vw; }
+	.left {			padding-left: 1.1494vw; }
+	.right {		padding-right: 1.1494vw; }	
+	.clear {		padding-bottom: 1.1494vw; }
     .element {      margin: 0 1.1494vw 1.1494vw 0;  }
     .desktophdn {   display: none }
 
@@ -35,6 +38,9 @@ body {          margin: 0; overflow-x: hidden }
 /* suggested line heights: 1.4925vw, 2.9851vw, 4.4776vw */
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
 	#main {         padding: 1.4925vw 0 0 2.9851vw; width: 99.95vw; }
+	.left {			padding-left: 1.4925vw; }
+	.right {		padding-right: 1.4925vw; }		
+	.clear {		padding-bottom: 1.4925vw; }
     .element {      margin: 0 1.4925vw 1.4925vw 0; }
     .laptophdn {   	display: none }
 	
@@ -53,6 +59,9 @@ body {          margin: 0; overflow-x: hidden }
 /* suggested line heights: 1.7544vw, 3.5088vw, 5.2632vw */
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
     #main {         padding: 1.7544vw 0 0 3.5088vw; width: 99.95vw; }
+	.left {			padding-left: 1.7544vw; }
+	.right {		padding-right: 1.7544vw; }	
+	.clear {		padding-bottom: 1.7544vw; }
     .element {      margin: 0 1.7544vw 1.7544vw 0; }
     .tablethdn {    display: none }
 
@@ -71,6 +80,9 @@ body {          margin: 0; overflow-x: hidden }
 /* suggested line heights: 2.1277vw, 4.2553vw, 6.3830vw */
 @media screen and (min-width: 640px) and (max-width: 1023px) {
 	#main {         padding: 2.1277vw 0 0 4.2553vw; width: 100vw; }
+	.left {			padding-left: 2.1277vw; }
+	.right {		padding-right: 2.1277vw; }
+	.clear {		padding-bottom: 2.1277vw; }	
     .element {      margin: 0 2.1277vw 2.1277vw 0; }
     .phablethdn {   display: none }
 	
@@ -86,6 +98,9 @@ body {          margin: 0; overflow-x: hidden }
 }
 @media screen and (max-width: 639px) and (orientation: landscape) {
 	#main {         padding: 2.1277vw 0 0 4.2553vw; width: 100vw; }
+	.left {			padding-left: 2.1277vw; }
+	.right {		padding-right: 2.1277vw; }
+	.clear {		padding-bottom: 2.1277vw; }		
     .element {      margin: 0 2.1277vw 2.1277vw 0; }
     .phablethdn {   display: none }
 	
@@ -104,6 +119,9 @@ body {          margin: 0; overflow-x: hidden }
 /* suggested line heights: 2.3810vw, 4.7619vw, 7.1429vw */
 @media screen and (max-width: 639px) and (orientation: portrait) {
     #main {         padding: 2.3810vw 0 0 4.7619vw; width: 100vw; }
+	.left {			padding-left: 2.3810vw; }
+	.right {		padding-right: 2.3810vw; }	
+	.clear {		padding-bottom: 2.3810vw; }	
     .element {      margin: 0 2.3810vw 2.3810vw 0; }
     .mobilehdn {    display: none }
     
