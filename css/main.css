@@ -32,7 +32,7 @@ strong, b {
 
 p {
 	margin: 0 0 2em 0;
-	text-align: justify;
+	text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	line-height: 1em;
 	margin: 0 0 1em 0;
+	text-align: left;
 }
 
 	h1 {font-size: 1.75em;}
@@ -65,11 +66,6 @@ sup {
 .alignleft {text-align: left;}
 .aligncenter {text-align: center;}
 .alignright {text-align: right;}
-
-.title {
-	background: #fdd100 /*COLORE SFONDO TITOLI WRAPPER*/;
-	padding-left: 1.5em;
-}
 	
 .left {
 	float: left;
@@ -79,12 +75,20 @@ sup {
 	float: right;
 }
 
-.right .left, .right .right,
-.left .left, .left .right {
+.right .left, .left .left {
 	padding-left: 0;
 }
 
-.clear:after {
+.right .right, .left .right {
+	padding-right: 0;
+}
+
+.row {
+	margin:auto;
+	text-align: center;
+}
+
+.row:after {
 	display: table;
 	content: "";
 	clear: both;
@@ -128,13 +132,7 @@ sup {
 
 	.block img {
 		border-radius: 10px;
-		border: 0;
 		width: 100%;
-	}
-
-	.block p {
-		word-wrap: break-word;
-		text-align: justify;
 	}
 
 /*Lists*/
@@ -268,6 +266,7 @@ header {
 	}
 
 	#banner h2 {
+		text-align: center;
 		font-weight: bold;
 		font-size: 3.5em;
 		line-height: 1em;
@@ -286,7 +285,7 @@ header {
 /*Wrapper*/
 
 #wrapper {
-	padding: 0 0 4em 0;
+	padding: 0;
 	color: #231f20 /*COLORE TESTO WRAPPER*/;
 }
 
@@ -298,20 +297,25 @@ header {
 		padding: 0.25em 0;
 		color: #231f20 /*COLORE TITOLI WRAPPER*/;
 	}
+
+	#wrapper h2 {
+		background: #fdd100 /*COLORE SFONDO TITOLI WRAPPER*/;
+		padding-left: 0.75em;
+	}
 	
 	#wrapper img {
 		max-width: 100%;
 		margin: auto;
 		top: 0.25em;
-		padding: 0 0 1em 0;
 	}
 
 /*Counter*/
 
 #counter {
-	padding: 4em 0;
-	background: /*COLORE SFONDO COUNTER*/;
-	color: /*COLORE TESTO COUNTER*/;
+	padding: 4em 0 3em 0;
+	background: #ffd100 /*COLORE SFONDO COUNTER*/;
+	color: #231f20 /*COLORE TESTO COUNTER*/;
+	text-align: center;
 }
 
 	#counter h1, #counter h2,
@@ -320,7 +324,17 @@ header {
 		font-family: "FuturaStd", sans-serif;
 		font-weight: bold;
 		padding: 0.25em 0;
-		color: /*COLORE TITOLI COUNTER*/;
+		color: #231f20 /*COLORE TITOLI COUNTER*/;
+		text-align: center;
+	}
+
+	#counter h1 {
+		font-size: 4em;
+		margin-bottom: auto;
+	}
+
+	#counter h3, #counter i {
+		margin-bottom: 1em;
 	}
 
 /*Footer*/
