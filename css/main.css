@@ -7,7 +7,7 @@
 body {
 	color: #231f20 /*COLORE TESTO GENERICO*/;
 	font-family: "ATOurBodoni", serif;
-	font-size: 14pt;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.75em;
 }
@@ -44,21 +44,21 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: left;
 }
 
-	h1 {font-size: 1.75em;}
-	h2 {font-size: 1.5em;}
-	h3 {font-size: 1.25em;}
-	h4 {font-size: 1em;}
-	h5 {font-size: 0.9em;}
-	h6 {font-size: 0.7em;}
+	h1 {font-size: 40px;}
+	h2 {font-size: 30px;}
+	h3 {font-size: 25px;}
+	h4 {font-size: 20px;}
+	h5 {font-size: 15px;}
+	h6 {font-size: 10px;}
 
 sub {
-	font-size: 0.8em;
+	font-size: 10px;
 	position: relative;
 	top: 0.5em;
 }
 
 sup {
-	font-size: 0.8em;
+	font-size: 10px;
 	position: relative;
 	top: -0.5em;
 }
@@ -268,7 +268,7 @@ header {
 	#banner h2 {
 		text-align: center;
 		font-weight: bold;
-		font-size: 3.5em;
+		font-size: 100px;
 		line-height: 1em;
 		margin: 0 0 0.3em 0;
 		padding: 0;
@@ -277,7 +277,7 @@ header {
 	#banner p {
 		font-family: "FuturaStd", sans-serif;
 		font-weight: 500;
-		font-size: 1.5em;
+		font-size: 30px;
 		margin-bottom: 2em;
 		text-align: center;
 	}
@@ -329,7 +329,7 @@ header {
 	}
 
 	#counter h1 {
-		font-size: 4em;
+		font-size: 75px;
 		margin-bottom: auto;
 	}
 
