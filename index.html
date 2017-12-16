@@ -12,18 +12,24 @@
 
 	<header>
 		<div id="logo"><h1>JEMP</h1></div>
-		<nav>
-			<ul>
-				<li class="background"><a href="#">Storia</a></li>
-				<li class="background"><a href="#">Network</a></li>
-				<li class="background"><a href="#">Servizi</a></li>
-				<li class="background"><a href="#">Team</a></li>
-				<li class="background"><a href="#">Contatti</a></li>
-				<li class="opacity"><a href="#"><i class="transp fa fa-facebook-square fa-2x"></i></a></li>
-				<li class="opacity"><a href="#"><i class="transp fa fa-instagram fa-2x"></i></a></li>				
-				<li class="opacity"><a href="#"><i class="transp fa fa-linkedin-square fa-2x"></i></a></li>
-			</ul>
-		</nav>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><i class="fa fa-times fa-2x"></i></a>
+			<div class="overlay-content">
+				<nav>
+					<ul>
+						<li><a href="#" class="color block ph1_w4 mh1_w3">Storia</a></li>
+						<li><a href="#" class="color block ph1_w4 mh1_w3">Network</a></li>
+						<li><a href="#" class="color block ph1_w4 mh1_w3">Servizi</a></li>
+						<li><a href="#" class="color block ph1_w4 mh1_w3">Team</a></li>
+						<li><a href="#" class="color block ph1_w4 mh1_w3">Contatti</a></li>
+						<li class="icon"><a href="#" class="color block ph1_w4 mh1_w3"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+						<li class="icon"><a href="#" class="color block ph1_w4 mh1_w3"><i class="fa fa-instagram fa-2x"></i></a></li>		
+						<li class="icon"><a href="#" class="color block ph1_w4 mh1_w3"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<span id="openbtn" onclick="openNav()" ><i class="fa fa-bars fa-2x"></i></span>
 	</header>
 	
 	<section id="banner">
@@ -107,8 +113,33 @@
     </section>
 	
 	<footer>
-		
+		<a href="#" class="logo"><h1 class="opacity">JEMP</h1></a>
+		<ul class="icon">
+			<li><a href="#"><i class="opacity fa fa-facebook-square fa-3x"></i></a></li>
+			<li><a href="#"><i class="opacity fa fa-instagram fa-3x"></i></a></li>		
+			<li><a href="#"><i class="opacity fa fa-linkedin-square fa-3x"></i></a></li>
+		</ul>
+		<ul class="copyright">
+			<li class="block mh1_w3">Copyright &copy; 2017 <a class="opacity" href="#">JEMP</a>. All rights reserved.</li>
+			<li class="block mh1_w3"><a class="opacity" href="#">Privacy policy</a></li>
+		</ul>
 	</footer>
+	
+	<script>
+		function display() {
+			document.getElementById("openbtn").style.display = "block";
+		}
+		
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+			document.getElementById("openbtn").style.display = "none";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+			setTimeout(display, 400);
+		}
+	</script>
 	
 </body>
 </html>
