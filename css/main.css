@@ -259,7 +259,7 @@ header {
 /*Banner*/
 
 #banner {
-	background-image: url("../images/banner.jpg");
+	background-image: url("../images/IMG_8457-1.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -269,6 +269,8 @@ header {
 	text-align: center;
 	position: relative;
 	height: 100%;
+	pointer-events: none;
+
 }
 
 	#banner:before {
@@ -310,6 +312,29 @@ header {
 		margin-bottom: 2em;
 		text-align: center;
 	}
+
+	#videoBG{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		background-image: url("../images/IMG_8457-1.jpg");
+		background-position: center center;
+	}
+	#pattern-overlay {
+		top:0;
+		left: 0;
+		pointer-events: none;
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/pattern_overlay.png");
+	background-repeat: space;
+	position: absolute;
+	opacity: 0.5;
+}
+
 
 /*Wrapper*/
 
@@ -445,25 +470,3 @@ footer {
 				padding-left: 0;
 			}
 		}
-
-		#videoBG{
-			position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  pointer-events: none;
-			background-image: url("../images/IMG_8457-1.jpg");
-			background-position: center center;
-		}
-		#pattern-overlay {
-			top:0;
-			left: 0;
-			pointer-events: none;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/pattern_overlay.png");
-    background-repeat: space;
-    position: absolute;
-    opacity: 0.5;
-	}
