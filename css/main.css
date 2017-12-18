@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 .alignleft {text-align: left;}
 .aligncenter {text-align: center;}
 .alignright {text-align: right;}
-	
+
 .left {
 	float: left;
 }
@@ -127,7 +127,7 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 10000;
-	box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.6);
 }
 
 	header h1 {
@@ -168,7 +168,7 @@ header {
 			margin: 0;
 			padding-left: 0;
 		}
-			
+
 			header nav > ul > li {
 				display: inline-block;
 				margin-left: 0;
@@ -194,22 +194,22 @@ header {
 					margin-left: 0;
 				}
 
-@media screen and (min-width: 1024px) {	
-	#openbtn i {		display: none; }	
-	#closebtn i {		display: none; }	
+@media screen and (min-width: 1024px) {
+	#openbtn i {		display: none; }
+	#closebtn i {		display: none; }
 }
 
-@media screen and (max-width: 1023px){	
-	header h1 {	
+@media screen and (max-width: 1023px){
+	header h1 {
 		left: 0;
 		position: relative;
-		text-align: center; 
+		text-align: center;
 	}
-	
+
 	header nav {
 		right: 0;
 	}
-	
+
 	.overlay {
 		height: 100%;
 		width: 0;
@@ -235,13 +235,13 @@ header {
 		color: #231f20 /*COLORE VOCI MENU MOBILE*/;
 		display: block;
 		transition: 0.3s;
-	}	
+	}
 }
 
 /*Banner*/
 
 #banner {
-	background-image: url("../images/banner.jpg");
+	background-image: url("../images/IMG_8457-1.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -251,6 +251,8 @@ header {
 	text-align: center;
 	position: relative;
 	height: 100%;
+	pointer-events: none;
+
 }
 
 	#banner:before {
@@ -294,6 +296,29 @@ header {
 		text-align: center;
 	}
 
+#videoBG{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("../images/IMG_8457-1.jpg");
+  background-position: center center;
+}
+
+#pattern-overlay {
+  top:0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern_overlay.png");
+  background-repeat: space;
+  position: absolute;
+  opacity: 0.5;
+}
+
 /*Wrapper*/
 
 #wrapper {
@@ -311,10 +336,10 @@ header {
 	}
 
 	#wrapper h2 {
-		background: #fdd100 /*COLORE SFONDO TITOLI WRAPPER*/;
+		background: #fdd100 /*COLORE SFONDO TITOLI WRAPPER, GIALLO PANTONE */;
 		padding-left: 0.75em;
 	}
-	
+
 	#wrapper img {
 		max-width: 100%;
 		margin: auto;
@@ -370,7 +395,7 @@ footer {
 		font-size: 1em;
 		margin: 2em 0 0 0;
 		padding: 0;
-		text-align: center;	
+		text-align: center;
 	}
 
 		footer .icon li {
@@ -385,7 +410,7 @@ footer {
 				padding-left: 0.5em;
 				margin-left: 0.5em;
 			}
-		}	
+		}
 
 			footer .icon li:first-child {
 				margin-left: 0;
