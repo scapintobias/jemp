@@ -51,18 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 	h5 {font-size: 15px;}
 	h6 {font-size: 10px;}
 
-sub {
-	font-size: 10px;
-	position: relative;
-	top: 0.5em;
-}
-
-sup {
-	font-size: 10px;
-	position: relative;
-	top: -0.5em;
-}
-
 .alignleft {text-align: left;}
 .aligncenter {text-align: center;}
 .alignright {text-align: right;}
@@ -250,12 +238,6 @@ header {
 	}
 }
 
-@media screen and (max-height: 639px) {
-	.overlay .color {
-		font-size: 20px;
-	}
-}
-
 /*Banner*/
 
 #banner {
@@ -297,6 +279,7 @@ header {
 	}
 
 	#banner h2 {
+		font-family: "FuturaStd", sans-serif;
 		text-align: center;
 		font-weight: bold;
 		font-size: 100px;
@@ -313,28 +296,28 @@ header {
 		text-align: center;
 	}
 
-	#videoBG{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		pointer-events: none;
-		background-image: url("../images/IMG_8457-1.jpg");
-		background-position: center center;
-	}
-	#pattern-overlay {
-		top:0;
-		left: 0;
-		pointer-events: none;
-	width: 100%;
-	height: 100%;
-	background-image: url("../images/pattern_overlay.png");
-	background-repeat: space;
-	position: absolute;
-	opacity: 0.5;
+#videoBG{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("../images/IMG_8457-1.jpg");
+  background-position: center center;
 }
 
+#pattern-overlay {
+  top:0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern_overlay.png");
+  background-repeat: space;
+  position: absolute;
+  opacity: 0.5;
+}
 
 /*Wrapper*/
 
