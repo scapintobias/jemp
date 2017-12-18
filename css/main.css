@@ -297,6 +297,7 @@ header {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	#videoBG{
 		position: absolute;
 		top: 0;
@@ -317,11 +318,36 @@ header {
 	background-repeat: space;
 	position: absolute;
 	opacity: 0.5;
+=======
+#videoBG{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("../images/IMG_8457-1.jpg");
+  background-position: center center;
+>>>>>>> d3fbc954e1e04e2c5d560d9f23f72c1f79bdc799
 }
 
+#pattern-overlay {
+  top:0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern_overlay.png");
+  background-repeat: space;
+  position: absolute;
+  opacity: 0.5;
+}
 
+<<<<<<< HEAD
 =======
 >>>>>>> home-pa
+=======
+>>>>>>> d3fbc954e1e04e2c5d560d9f23f72c1f79bdc799
 /*Wrapper*/
 
 #wrapper {
