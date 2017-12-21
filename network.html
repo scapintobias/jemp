@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scable=no">
+	<title>JEMP | Network</title>
+	<!--Css principale (chiama gli altri css)-->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<!--Css slider-->	
+	<link href="css/slider.css" rel="stylesheet" type="text/css">
+	<!--Icone JEMP-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+	<header>
+		<div class="logo"><a href="index.html"><img src="images/logo_black.png"/></a></div>
+		<div id="m-mobile">
+			<a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><i class="fa fa-times fa-2x"></i></a>
+			<div class="m-mobile-content">
+				<nav>
+					<ul>
+						<li><a href="story.html" class="color element pw4 mw3">Storia</a></li>
+						<li><a href="services.html" class="color element pw4 mw3">Servizi</a></li>
+						<li><a href="team.html" class="color element pw4 mw3">Team</a></li>
+						<li><a href="network.html" class="current color element pw4 mw3">Network</a></li>
+						<li><a href="contacts.html" class="color element pw4 mw3">Contatti</a></li>
+						<li class="icon"><a href="https://www.facebook.com/JEMPolimi/" class="color element pw4 mw3"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+						<li class="icon"><a href="https://www.instagram.com/jemp_polimi/" class="color element pw4 mw3"><i class="fa fa-instagram fa-2x"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<span id="openbtn" onclick="openNav()" ><i class="fa fa-bars fa-2x"></i></span>
+	</header>
+	
+	<section id="wrapper">
+		
+		<div class="row">
+			<div class="left element w6 lw4 tw3 pw4 mw3">
+				<h3><i class="fa fa-globe"></i>Il Ruolo del Network</h3>
+				<p>Il Network delle Junior Enterprise per condividere obiettivi e punti di vista. Per crescere, sempre.</p>
+				<p>Le Junior Enterprise non sono realtà isolate, bensì profondamente radicate nel territorio e collegate tra di loro attraverso un Network di associazioni che operano a livello nazionale, europeo e mondiale.</p>
+				<p>JADE Italia è la confederazione che garantisce la continua espansione del movimento e coordina i contatti tra le Junior Enterprise. JADE, a livello europeo, si occupa di coordinare le confederazioni nazionali e interfacciarsi con le istituzioni europee.</p>
+			</div>
+			<div class="right element w6 lw4 tw3 pw4 mw3"><img src="images/placeholder.jpg"/></div>
+		</div>
+		<h2><i class="fa fa-calendar"></i>Eventi</h2>
+		<div id="slider">		
+			<div class="stage">
+				<div id="SLDR-ONE" class="sldr">
+					<ul class="wrp animate">
+						<li class="elmnt-one"><div class="skew"><div class="wrap"><img src="images/placeholder.jpg"></div></div></li>
+						<li class="elmnt-two"><div class="skew"><div class="wrap"><img src="images/placeholder.jpg"></div></div></li>
+						<li class="elmnt-three"><div class="skew"><div class="wrap"><img src="images/placeholder.jpg"></div></div></li>
+						<li class="elmnt-four"><div class="skew"><div class="wrap"><img src="images/placeholder.jpg"></div></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="captions">
+				 <div class="focalPoint"><h3><small>Lake</small></h3></div>
+				 <div><h3><small>Mountain Range</small></h3></div>
+				 <div><h3><small>Mt. Fuji</small></h3></div>
+				 <div><h3><small>Pink Forest</small></h3></div>
+				</div>
+				<ul class="selectors">
+					<li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+				</ul>
+			</div>			
+		</div>	
+			
+	</section>
+
+	<footer>
+		<a href="index.html"><img src="images/logo_black.png" class="logo opacity"/></a>
+		<ul class="icon">
+			<li><a href="https://www.facebook.com/JEMPolimi/"><i class="opacity fa fa-facebook-square fa-3x"></i></a></li>
+			<li><a href="https://www.instagram.com/jemp_polimi/"><i class="opacity fa fa-instagram fa-3x"></i></a></li>
+		</ul>
+		<ul class="copyright">
+			<li class="mw3">Copyright &copy; 2017 <a class="opacity" href="index.html">JEMP</a>. All rights reserved.</li>
+			<li class="mw3"><a class="opacity" href="#">Privacy policy</a></li>
+		</ul>
+	</footer>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.sldr.js"></script>
+		<script>
+		$( window ).load( function() {
+
+			$( '.sldr' ).each( function() {
+				var th = $( this );
+				th.sldr({
+					focalClass    : 'focalPoint',
+					offset        : th.width() / 2,
+					sldrWidth     : 'responsive',
+					nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+					previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+					selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+					toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+					sldrInit      : sliderInit,
+					sldrStart     : slideStart,
+					sldrComplete  : slideComplete,
+					sldrLoaded    : sliderLoaded,
+					sldrAuto      : true,
+					sldrTime      : 5000,
+					hasChange     : true
+				});
+			});
+
+		});			
+		function sliderInit( args ) {}
+		function slideLoaded( args ) {}
+		function sliderLoaded( args ) {}
+		function slideStart( args ) {}
+		function slideComplete( args ) {}
+	</script>
+
+	<script>
+		function display() {
+			document.getElementById("openbtn").style.display = "block";
+		}
+
+		function openNav() {
+			document.getElementById("m-mobile").style.width = "100vw";
+			document.getElementById("openbtn").style.display = "none";
+		}
+
+		function closeNav() {
+			document.getElementById("m-mobile").style.width = "0vw";
+			setTimeout(display, 400);
+		}
+	</script>
+	
+</body>
+</html>
